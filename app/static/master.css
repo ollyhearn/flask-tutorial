@@ -1,0 +1,89 @@
+body {
+	background: #162b42;
+	color: #f1ddbf;
+	font-family: 'Roboto Mono', monospace;
+}
+
+.main {
+	display: flex;
+	justify-content: center;
+}
+
+.hero {
+	display: flex;
+	justify-content: space-between;
+	flex-flow: row;
+	border: solid 2px #f1ddbf;
+	margin: 0 1% 1% 1%;
+	width: 99%;
+	padding: 0 2% 0 2%;
+}
+
+.menu-list {
+	display: flex;
+	justify-content: flex-start;
+	flex-flow: row;
+	position: sticky;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+li > ul {
+	display: inline-block;
+}
+
+a, a:visited {
+	text-decoration: none;
+	color: #f1ddbf;
+}
+
+a:hover {
+	color : #d3af78;
+}
+
+.separator {
+	margin: 0 3em 0 3em;
+}
+
+footer {
+	margin-top: 5%;
+	background: #000000AA;
+}
+
+.footer-items {
+	display: flex;
+	justify-content: space-around;
+	margin: 0 30% 10% 30%;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.postform {
+	display: flex;
+	flex-flow: column;
+	border: 2px solid #f1ddbf;
+	justify-content: flex-start;
+	width: 80%;
+	margin: 0 10% 0 10%;
+	/* margin: 0 50% 0 50%; */
+}
+
+.textfield {
+	height: 30em;
+}
+
+.sendbox {
+	display: flex;
+	flex-flow: row;
+	justify-content: space-around;
+}
+
+.sendbox > input {
+	min-width: 300px;
+}
+
+.capthca {
+	border: 1px solid #f1ddbf;
+	height: 100px;
+	width: auto;
+}

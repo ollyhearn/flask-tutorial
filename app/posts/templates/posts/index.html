@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block header %}
+	All posts
+{% endblock %}
+
+{% block text %}
+{% for post in posts %}
+	<div class="post">
+		<h4><a href="/blog/{{ post.slug }}">{{ post.title }}</a></h4>
+	</div>
+{% endfor %}
+{% endblock %}
+
+{% block additional %}
+	<input type="button" value="New post" onclick="window.location.href='{{ url_for('posts.newpost') }}';" >
+{% endblock %}

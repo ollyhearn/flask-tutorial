@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<style type="text/css">
+.dr {
+  display: flex;
+  flex-flow: column;
+}
+</style>
+<body>
+<div class="dr">
+<a href="{{ url_for('debug.index') }}"> <-- Debug</a>
+<a href="{{ url_for('index') }}"> <-- Main</a>
+{{ s|safe }}
+
+</div>
+</body>
+</html>

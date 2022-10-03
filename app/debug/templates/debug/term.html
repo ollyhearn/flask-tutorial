@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<style type="text/css">
+.dr {
+  display: flex;
+  flex-flow: column;
+}
+</style>
+<body>
+<div class="dr">
+<a href="{{ url_for('debug.index') }}"> <-- Debug</a>
+<a href="{{ url_for('index') }}"> <-- Main</a>
+<h3>Output</h3>
+<p>{{ s }}</p>
+<h3>Execute another one</h3>
+<form action="{{ url_for('debug.term')}}" method="post">
+  <input type="text" name="command" value="Your command" />
+  <input type="submit" value="execute"/>
+</form>
+</div>
+</body>
+</html>

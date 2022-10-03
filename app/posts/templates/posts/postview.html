@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block header %}
+	{{ post.title }}
+{% endblock %}
+
+{% block text %}
+	{{ post.text }}
+{% endblock %}
+
+{% block additional %}
+	<p>Author: {{ post.author }}</p>
+	<p>Created: {{ post.created }}</p>
+{% endblock %}

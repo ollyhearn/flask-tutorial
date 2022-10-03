@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block header %}
+	New post
+{% endblock %}
+
+{% block text %}
+	Fill forms below to publish new post!
+{% endblock %}
+
+{% block additional %}
+<div class="postform">
+	<form action="{{ url_for('posts.send')}}" method="post">
+		<input type="text" name="title" size="40" placeholder="Title (optional)">
+		<textarea name="text" rows="8" cols="80" class="textfield" placeholder="Your text..."></textarea>
+		<div class="sendbox">
+			<img src="{{ url_for('static', filename='pic/captcha.png') }}" alt="Stupid captcha" class="capthca">
+			<input type="text" size="40" placeholder="Captcha">
+			<input type="submit" value="Send!">
+		</div>
+	</form>
+ </div>
+
+ {% endblock %}

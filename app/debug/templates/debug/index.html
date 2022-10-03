@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block header %}
+	Debug page
+{% endblock %}
+
+{% block text %}
+<h3>Drawer</h3>
+<form action="{{ url_for('debug.drawer')}}" method="post">
+  <input type="text" name="num" placeholder="Binary number" />
+  <input type="submit" value="draw"/>
+</form>
+<h3>Sorter</h3>
+<form action="{{ url_for('debug.sorter')}}" method="post">
+  <input type="text" name="array" placeholder="Your array" />
+  <input type="submit" value="sort"/>
+</form>
+<h3>Terminal</h3>
+<form action="{{ url_for('debug.term')}}" method="post">
+  <input type="text" name="command" placeholder="Your command" />
+  <input type="submit" value="execute"/>
+</form>
+{% endblock %}
